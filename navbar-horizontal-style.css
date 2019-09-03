@@ -1,0 +1,138 @@
+body{
+	margin:60px 15% 60px 15%; 
+	font-family: 'Proza Libre', sans-serif;
+}
+
+.left-responsive{
+	float:left;
+	margin: 40px;
+}
+/* ALL NAV STYLES BELOW */
+
+.bannerbackground{
+	background-image: url("images/vector-grey-abstract-background.png");
+	background-repeat: no-repeat;
+	background-size:auto;
+}
+
+
+
+/* THIS CLASS is for the DIV containing the navbar*/
+.nav-container{ 	
+
+	/*no height nesc, it'll stretch to fit*/
+	/*next line colors the "track"*/
+	background-color: #CCCCA5;
+	/*next 3 lines are a set. They glue the 
+	navbar to the top of the browser window*/
+	position:fixed; 
+	top:0; 
+	/*optional– right, down, blur, color*/ 
+	box-shadow: 2px 2px 20px #7E7F79;   
+	} 
+/* NEXT is the list INSIDE the nav-container (only)*/
+.nav-container ul{
+	width:100%;	
+	margin: 0;
+	padding:0; /*would have default padding otherwise*/
+	list-style-type: none; /*eliminates the "bullets"*/
+	font-size:18px;  
+	font-family:"Gill Sans", sans-serif;
+	}   
+/*this is only required for HORIZONTAL NAVs*/
+.nav-container li{
+	/*each seperate "box" moves left!*/
+float: left;
+	}  
+/* NEXT are the LINKS INSIDE nav-container (only) */
+.nav-container a{
+	/*NEXT LINE let’s us treat each link as 
+	a box, which can then be sized and styled*/ 
+  display: block;
+	/*NEXT LINE allows the box "width" to include 
+	the width of the borders and padding */
+	box-sizing: border-box; 
+	width: 222px;
+	padding: 10px;
+	text-decoration: none; /*removes underlines*/
+	text-align: center; 
+	} 
+/* LINK-STATE-COLORS BELOW*/
+/* 1ST, the UNCLICKED color set */
+.nav-container a:link{
+	background-color: #9C9C58; /*olive green*/
+	color:#ffffff; /* white text color*/
+	}
+/* VISITED color set */
+.nav-container a:visited{ 
+	background-color:#769f60; /*darker green*/
+	color:#CCCCA5; /*subtle text color*/
+	}
+/* ROLLOVER color set */
+.nav-container a:hover{ 
+	background-color: #ABD599; /*lighter green*/
+	color:#9C9C58; /*medium text color*/
+	}
+/* CLICKED NOW color set */
+.nav-container a:active{ 
+	background-color:#CCCCA5;/*like "track"*/
+	color:#000000;/*black*/
+	}
+	body{
+	margin: 50px 75px 50px 75px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: black;
+}
+.indexbg{
+	background-color: red;
+}
+.historybg{
+	background-color: blue;
+}
+.artistsbg{
+	background-color: green;
+}
+.contemporarybg{
+	background-color: orange;
+}
+h1{
+	font-family:"Courier New", Courier, monospace;
+	font-size: 48px;
+	color: black;
+	padding: 0 5px 5px 5px;
+	width: 500px;
+}
+.rt-responsive{ 
+max-width:100%; 
+height: auto;
+float: right;
+margin:15px 0 15px 15px;
+}
+p{
+	text-align: justify;
+	line-height: 24px;
+}
+a{
+	color: blue;
+}
+.left-static{
+	float: left;
+	margin: 0 40px 40px 0;
+}
+.right-static{
+	float: right;
+	margin: 0 0 40px 40px;
+}
+/* RESPONSIVE classes for img */
+.left-responsive{
+    max-width:100%;
+    height: auto;
+	float:left;
+	margin: 0 40px 40px 0;
+}
+.right-responsive{
+    max-width:100%;
+    height: auto;
+	float:right;
+	margin: 0 40px 40px 0;
+	}   
